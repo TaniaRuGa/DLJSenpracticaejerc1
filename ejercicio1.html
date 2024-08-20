@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de contacto - Ejercicio 1</title>
+</head>
+
+<body>
+    <div>
+        <div style="width: 40%;margin: 0 auto">
+            <h2>
+                Escríbenos !!!
+            </h2>
+            <div>
+                <p id="formSuccess" style="color:green; font-style: italic; display:none;">Mensaje enviado con éxito!!!</p>
+            </div>
+            <form id="contactForm">
+                <div>
+                    <div style="display: flex;flex-direction: column;">
+                        <label for="name"> 
+                            Nombre completo
+                        </label>
+                        <input id="name" type="text" name="nombre" required>
+                        <p id="errorName" style="color:red;font-style: italic;">El nombre es requerido</p>
+                    </div>
+                    <div style="display: flex;flex-direction: column;">
+                        <label for="subject"> 
+                            Asunto: 
+                        </label>
+                        <input id="subject" type="text" name="asunto" required>
+                        <p id="errorSubject" style="color:red;font-style: italic;">El asunto es requerido</p>
+                    </div>
+                </div>
+                <div style="display: flex;flex-direction: column;">
+                    <label for="message"> 
+                        Mensaje: 
+                    </label>
+                    <textarea id="message" name="mensaje" required></textarea>
+                    <p id="errorMessage" style="color:red;font-style: italic;">El mensaje es requerido</p>
+                </div>
+                <div>
+                    <button type="submit"> Enviar mensaje </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script src="assets/js/ejercicio1/ejercicio1.js"></script>
+</body>
+
+</html>
